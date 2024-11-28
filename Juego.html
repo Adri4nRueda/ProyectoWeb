@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Juego de Scratch</title>
+    <link rel="stylesheet" href="Paguinas/stylejuego.css">
+</head>
+<body>
+    <header >
+        <div class="container">
+            <div class="btn-menu">
+              <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+              <h1><img src="Recursos/Imagenes/Logo.png" alt="Streetwear Store"></h1>
+            </div>
+          </div>
+          <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+      <div class="cont-menu">
+        <nav>
+          <a href="Index.html">Inicio</a>
+          <a href="PaginaInicio.html">Catalogo</a>
+          <a href="Juego.html">Juego</a>
+          <a href="Juego.html#apk">App</a>
+        </nav>
+        <label for="btn-menu">❌</label>
+      </div>
+    </div>
+
+        <div class="letrero">
+            <h1>Streetwear</h1>
+        </div>
+        <nav>
+            <div class="nav-icons">
+                <button type="button" class="Boton-Buscar">🔍</button>
+                <button type="button" class="Boton-Cuenta">👤</button>
+                <button type="button" class="Boton-CarritoCompra">🛒</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="controls-section">
+        <h1>Sobre El Juego<span class="edit-icon">✅</span></h1>
+        <div class="controls">
+            <h2><strong>Como Jugar:</strong></h2>
+            <p>Tienes que recuperar las prendas que fueron sacadas de la tienda por el bolso gigante mutante y botadas a lo largo de la ciudad esquivando todos </p>
+            <p>los obstaculos que vas encontrando por el camino y aplastando a los bolsos que se enviados por el bolso gigante. Recoge la mayor cantidad de prendas</p>
+            <p>y por ultimo derrota al bolso gigante para que no vuelva a saquear la tienda</p>
+            <h2>Movimiento 
+                <span class="key">◄</span>
+                <span class="key">▲</span>
+                <span class="key">►</span>
+            </h2>
+        </div>
+    </section>
+
+    <main>
+        <div class="juego-container">
+            <!-- Embebemos el juego de Scratch -->
+            <iframe 
+                src="Recursos/Juego/JuegoHtml.html" 
+                allowtransparency="true" 
+                width="800" 
+                height="600" 
+                frameborder="0" 
+                scrolling="no"
+            ></iframe>
+        </div>
+        <p class="juego-descripcion">¡Disfruta jugando nuestro juego! Haz clic en la bandera verde para empezar.</p>
+    </main>
+
+
+
+    <section class="app-section">
+      <div class="app-description" id="apk">
+          <h1>¡Bienvenido a la Aplicación Streetwear!</h1>
+          <p>Disfruta de horas de diversión con nuestra app. Esquiva, recoge, gana y diviértete mientras exploras nuestros dos juegos. ¡Descárgala ahora y empieza a jugar!</p>
+      </div>
+      <div class="download-button" >
+          <a href="Recursos/externos/JuegoApp.apk" download="JuegoApp.apk" class="btn">Descargar APK</a>
+      </div>
+      <div class="screenshots" >
+        <h2>Vistazo rápido a la app:</h2>
+        <div class="screenshot-gallery">
+            <img src="Recursos/Imagenes/app1.jpg" alt="Pantallazo 1" class="screenshot">
+            <img src="Recursos/Imagenes/app2.jpg" alt="Pantallazo 2" class="screenshot">
+            <img src="Recursos/Imagenes/app3.jpg" alt="Pantallazo 3" class="screenshot">
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kahoot-container">
+        <h1 class="kahoot-title">¡Juega en nuestra encuesta Kahoot!</h1>
+        <p>Haz clic en el botón para comenzar a jugar:</p>
+        <a href="https://create.kahoot.it/share/encuestastreetwearstore/b9e82891-b432-4c37-a746-405763adb868" target="_blank" class="kahoot-button">Jugar ahora</a>
+        <p>No necesitas utilizar pin para poder jugar en la app o sitio web de Kahoot.</p>
+    </div>
+  </section>
+
+
+
+  <footer id="contacto">
+    <div class="footer-content">
+        <p>&copy; 2024 Streetwear Store. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

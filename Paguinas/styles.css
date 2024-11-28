@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+    padding: 0;
+    
+
+}
+
+
+
+.container .btn-menu,
+.logo {
+  float: left;
+}
+.container .btn-menu label {
+  color: #000000;
+  font-size: 40px;
+  cursor: pointer;
+}
+.logo h1 {
+  margin-left: 10px;
+}
+
+
+
+/*Menù lateral*/
+#btn-menu {
+  display: none;
+}
+.container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background: #1c1c1c;
+  height: 100vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+.cont-menu nav {
+  transform: translateY(15%);
+}
+.cont-menu nav a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #c7c7c7;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+.cont-menu nav a:hover {
+  border-left: 5px solid #c7c7c7;
+  background: #1f1f1f;
+}
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+/*Fin de Menù lateral*/
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+header .logo img {
+    width: 60px;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a, .nav-icons a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+.letrero{
+    justify-content: center;
+}
+.Boton-Buscar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 25px; 
+}
+.Boton-Cuenta {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    cursor: pointer;
+}
+.Boton-CarritoCompra {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 25px; 
+}
+
+/* Hero Section */
+.hero {
+    background-color: #424242;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff3300;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Productos Section */
+.productos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.productos h2 {
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #ff3300;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.Gorra1{
+    padding: 10px 10px;
+}
+
+/* Sobre Nosotros Section */
+.sobre-nosotros {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.sobre-nosotros h2 {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+
+
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background: #cccccc;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 2000px;
+    width: 100%;
+    flex-wrap: wrap; /* Permite que los elementos se reorganicen en pantallas pequeñas */
+}
+
+.text {
+    flex: 1;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    max-width: 100%; /* Asegura que la imagen nunca exceda el contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 1000px) {
+    .section {
+        flex-direction: column; /* Cambia la disposición a vertical en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 1.5rem; /* Reduce el tamaño del texto */
+    }
+
+    .image {
+        max-width: 90%; /* Reduce ligeramente el tamaño de la imagen */
+    }
+}
+
+
+.btn {
+    padding: 10px 20px; /* Relleno interno del botón */
+    background-color: #ff3300; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra debajo del botón */
+    transition: all 0.3s ease; /* Transiciones suaves al interactuar */
+}
+
+.btn:hover {
+    background-color: #ff3300; /* Cambia el color al pasar el cursor */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+}
+
+
+
+
+
+
+
+/* Sección de video de avatar */
+.avatar-video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    gap: 20px;
+}
+
+.avatar-video-section h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #333;
+}
+
+.video-container {
+    max-width: 600px;
+    width: 100%;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
